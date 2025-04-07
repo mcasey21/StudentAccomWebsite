@@ -1,0 +1,151 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+img {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+aside {
+    position: absolute;
+    left: 50%;
+}
+
+form {
+    box-shadow: 0 0 10px #000;
+    padding: 30px 20px 35px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    left: 14%;
+    top: 55%;
+    width: 400px;
+    
+}
+
+input {
+    padding: 0.5em 1em;
+    border: 0;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: 0;
+}
+
+fieldset {
+    padding: 0;
+    border: 2px solid hotpink;
+    border-radius: 4px;
+}
+
+.LoginButton {
+    background-color: hotpink;
+    border-radius: 25px;
+    height: 40px;
+    font-size: larger;
+}
+
+.RegisterButton {
+    background-color: hotpink;
+    border-radius: 25px;
+    height: 40px;
+    font-size: larger;
+    width: 25%;
+}
+
+.title {
+    position: relative;
+    left: 40%;
+    font-size: 210%;
+    text-decoration: underline hotpink;
+}
+
+.welcome {
+    position: relative;
+    left: 25%;
+    top: 30px;
+    font-size: 190%;
+}
+
+.socialsText {
+    position: relative;
+    left: 15%;
+    top: 295px;
+}
+
+.registerContainer {
+
+    input {
+        position: relative;
+        left: 56%;
+        top: 315px;
+    }
+
+    p {
+        position: relative;
+        left: 15%;
+        top: 270px;
+    }
+}
+
+.fb, .x, .lkin {
+    position: relative;
+    top: 290px;
+}
+
+.fb {
+    position: relative;
+    left: 16%;
+}
+
+.x {
+    position: relative;
+    left: 18%;
+}
+
+.lkin {
+    position: relative;
+    left: 20%;
+}
+
+.unistay-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left: 14%;
+}
+
+.unistay-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 6px;
+    background: hotpink;
+    border-radius: 3px;
+}
+
+.unistay-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #546e7a;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    position: relative;
+    left: 14%;
+}
