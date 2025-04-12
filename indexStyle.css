@@ -17,7 +17,7 @@ aside {
     left: 50%;
 }
 
-form {
+.loginForm {
     box-shadow: 0 0 10px #000;
     padding: 30px 20px 35px 20px;
     border-radius: 10px;
