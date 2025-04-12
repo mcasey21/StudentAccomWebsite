@@ -54,12 +54,22 @@ fieldset {
     font-size: larger;
 }
 
+.LoginButton:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
 .RegisterButton {
     background-color: hotpink;
     border-radius: 25px;
     height: 40px;
     font-size: larger;
     width: 25%;
+}
+
+.RegisterButton:hover {
+    background-color: pink;
+    cursor: pointer;
 }
 
 .title {
