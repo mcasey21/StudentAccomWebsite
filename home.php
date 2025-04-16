@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    // Assuming you store the logged-in user's username in the session
+    $username = isset($_SESSION['username']) ? $_SESSION['username'] : null;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +36,12 @@
         <h2>Menu</h2>
         <hr>
         <img class="sideMenuImg" src="personicon.png">
-        <a class="sideMenuSection" href="edit.php">My Account</a>
+        <?php 
+        if ($username): ?>
+            <a class="sideMenuSection" href="edit.php?id=<?= urlencode($username) ?>">My Account</a>
+        <?php endif; 
+        ?>
+
         <hr>
     </div>
     

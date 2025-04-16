@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result && $result->num_rows === 1) {
         // Login successful
+        session_start();
+        $_SESSION['username'] = $username;
         header("Location: home.php");
         exit();
     } 

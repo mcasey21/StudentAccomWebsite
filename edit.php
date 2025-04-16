@@ -14,7 +14,7 @@
         $sql = "UPDATE userinfo SET username='$u', password='$p', email='$e', fName='$f', sName='$s'  WHERE username='$id'";
         echo "<pre>\n$sql\n</pre>\n";
         $conn->query($sql);
-        echo 'Updated - <a href="home.html">Continue...</a>';
+        echo 'Updated - <a href="home.php">Continue...</a>';
         return;
     }
 
@@ -33,19 +33,42 @@
     echo <<< _END
         <p>Edit User</p>
         <form method="post">
-        <p>username:
-        <input type="text" name="username" value="$u"></p>
-        <p>password:
-        <input type="password" name="password" value="$p"></p>
-        <p>email:
-        <input type="email" name="email" value="$e"></p>
-        <p>first name
-        <input type="text" name="fName" value="$f"></p>
-        <p>surname:
-        <input type="text" name="sName" value="$s"></p>
+            <fieldset>
+                <legend>Username</legend>
+                <input type="text" name="username" required>
+            </fieldset>
+            <fieldset>
+                <legend>Password</legend>
+                <input type="password" name="password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>First Name</legend>
+                <input type="text" name="fName" required>
+            </fieldset>
+            <fieldset>
+                <legend>Last Name</legend>
+                <input type="text" name="sName" required>
+            </fieldset>
         <input type="hidden" name="id" value="$id">
         <p><input type="submit" value="Update"/>
-        <a href="index.php">Cancel</a></p>
+        <a href="home.php">Cancel</a></p>
         </form>
     _END;
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerStyle.css">
+    <title>My Account</title>
+</head>
+<body>
+    
+</body>
+</html>
