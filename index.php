@@ -1,3 +1,29 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    require_once "ca_db_setup.php"; // Database connection
+    $loginError = "";
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Check if the user exists
+    $sql = "SELECT * FROM userinfo WHERE username = '$username' AND password = '$password'";
+    $result = $conn->query($sql);
+
+    if ($result && $result->num_rows === 1) {
+        // Login successful
+        header("Location: home.php");
+        exit();
+    } 
+    else {
+        // Login failed
+        $loginError = "Invalid username or password.";
+    }
+
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +51,10 @@
             </fieldset>
             <input type="submit" value="Login" class="LoginButton">
         </form>
+
+        <?php if (!empty($loginError)): ?>
+            <p ><?= $loginError ?></p>
+        <?php endif; ?>
 
         <div class="registerContainer">
             <a href="register.php" target="_blank">

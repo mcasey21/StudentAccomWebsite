@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_user'])) {
             VALUES ('$u', '$p', '$e', '$f', '$s')";
 
     if ($conn->query($sql) === TRUE) {
-        $registerMessage = "Resgistered succesfully!, return to login page";
+        $registerMessage = "Registered successfully! <a class='returnLink' href='index.html'>return to login page</a>";
     }
     else {
         $registerMessage = "Error: " . $conn->error;

@@ -96,3 +96,8 @@ fieldset {
     background: hotpink;
     border-radius: 3px;
 }
+
+.returnLink {
+    text-decoration: none;
+    color: hotpink;
+}

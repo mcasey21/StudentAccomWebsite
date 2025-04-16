@@ -159,3 +159,11 @@ fieldset {
     position: relative;
     left: 14%;
 }
+
+.loginErrText {
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
