@@ -14,7 +14,7 @@
         $sql = "UPDATE userinfo SET username='$u', password='$p', email='$e', fName='$f', sName='$s'  WHERE username='$id'";
         echo "<pre>\n$sql\n</pre>\n";
         $conn->query($sql);
-        echo 'Updated - <a href="home.php">Continue...</a>';
+        echo 'Details Updated - <a href="home.php">Continue...</a>';
         return;
     }
 
@@ -31,32 +31,34 @@
     $id = htmlentities($row['username']);
 
     echo <<< _END
-        <p>Edit User</p>
-        <form method="post">
+        <div class="loginWrapper">
+        <div class="title">Account Details</div>
+        <form class="loginForm" method="post">
             <fieldset>
                 <legend>Username</legend>
-                <input type="text" name="username" required>
+                <input type="text" name="username" value="$u" required>
             </fieldset>
             <fieldset>
                 <legend>Password</legend>
-                <input type="password" name="password" required>
+                <input type="password" name="password" value="$p" required>
             </fieldset>
             <fieldset>
                 <legend>Email</legend>
-                <input type="email" name="email" required>
+                <input type="email" name="email" value="$e" required>
             </fieldset>
             <fieldset>
                 <legend>First Name</legend>
-                <input type="text" name="fName" required>
+                <input type="text" name="fName" value="$f" required>
             </fieldset>
             <fieldset>
                 <legend>Last Name</legend>
-                <input type="text" name="sName" required>
+                <input type="text" name="sName" value="$s" required>
             </fieldset>
-        <input type="hidden" name="id" value="$id">
-        <p><input type="submit" value="Update"/>
-        <a href="home.php">Cancel</a></p>
+            <input type="hidden" name="id" value="$id">
+            <p><input type="submit" value="Update"/>
+            <a href="home.php">Cancel</a></p>
         </form>
+    </div>
     _END;
 ?>
 

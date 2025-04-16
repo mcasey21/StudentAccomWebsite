@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Login successful
         session_start();
         $_SESSION['username'] = $username;
+        $_SESSION['password'] = $password;
         header("Location: home.php");
         exit();
     } 
@@ -55,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
 
         <?php if (!empty($loginError)): ?>
-            <p ><?= $loginError ?></p>
+            <p class="loginErrText"><?= $loginError ?></p>
         <?php endif; ?>
 
         <div class="registerContainer">
