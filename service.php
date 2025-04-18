@@ -68,13 +68,17 @@
 
         if ($result->num_rows > 0) {
             echo "<div class='room-container'>";
-            while($row = $result->fetch_assoc()) {
+            while($row = $result->fetch_assoc())
+            {
                 echo "<div class='room-tile'>";
                 echo "<img src='" . htmlspecialchars($row['Pic']) . "' alt='" . htmlspecialchars($row['Title']) . "' class='room-image'>";
                 echo "<div class='room-content'>";
                 echo "<h2 class='room-title'>" . htmlspecialchars($row['Title']) . "</h2>";
                 echo "<p class='room-description'>" . htmlspecialchars($row['Description']) . "</p>";
+                echo "<div class='room-bottom-row'>";
                 echo "<p class='room-price'>€" . htmlspecialchars($row['Price']) . " per month</p>";
+                echo "<a class='buyButton' href='checkout.php?id=" . urlencode($row['Title']) . "'>Buy Now</a>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
             }

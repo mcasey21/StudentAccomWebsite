@@ -184,3 +184,21 @@ body {
 .room-price {
     font-weight: bold;
 }
+
+.room-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.buyButton {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 30%;
+}
+
+.buyButton:hover {
+    color: lightpink;
+}
