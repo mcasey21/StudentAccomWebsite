@@ -10,7 +10,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Unistay</title>
-  <link rel="stylesheet" href="contactStyle.css" />
+  <link rel="stylesheet" href="serviceStyle.css" />
 </head>
 <body>
 
@@ -59,39 +59,33 @@
         <hr>
     </div>
 
-    <div class="leftSection">
-        <h1 class="contact-title">Contact Us</h1>
-        <p class="contact-text">Feel free to use the form or drop us an email. <br> 
-        Old-fashioned phone calls work too
-        </p>
-        <div class="contact-item">
-            <img src="phoneiconpink.png" alt="">
-            <p>484 324 2400</p>
-        </div>
-        <div class="contact-item">
-            <img src="lettericonpink.png" alt="">
-            <p>info@unistay.com</p>
-        </div>
-        <div class="contact-item">
-            <img src="pinpointiconpink.png" alt="">
-            <p>13 West 3rd St. <br> Dublin, Ireland</p>
-        </div>
-    </div>
+    <?php
+        require_once "ca_db_setup.php";
 
-    <div class="rightSection">
-        <form>
-            <label for="">Name</label><br>
-            <input class="namebox" type="text" placeholder="First" required/>
-            <input class="namebox" type="text" placeholder="Last" required/><br><br>
-            <label for="">Email</label><br>
-            <input type="email" placeholder="example@email.com" required/><br><br>
-            <label for="">Phone (optional)</label><br>
-            <input type="tel" placeholder="xxx-xxx-xxxx" /><br><br>
-            <label for="">Message</label><br>
-            <textarea placeholder="Type your message ..." required></textarea><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+        // Display data
+        $sql = "SELECT * FROM roominfo";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            echo "<div class='room-container'>";
+            while($row = $result->fetch_assoc()) {
+                echo "<div class='room-tile'>";
+                echo "<img src='" . htmlspecialchars($row['Pic']) . "' alt='" . htmlspecialchars($row['Title']) . "' class='room-image'>";
+                echo "<div class='room-content'>";
+                echo "<h2 class='room-title'>" . htmlspecialchars($row['Title']) . "</h2>";
+                echo "<p class='room-description'>" . htmlspecialchars($row['Description']) . "</p>";
+                echo "<p class='room-price'>€" . htmlspecialchars($row['Price']) . " per month</p>";
+                echo "</div>";
+                echo "</div>";
+            }
+            echo "</div>";
+        } 
+        else {
+            echo "No rooms found.";
+         }
+
+        $conn->close();
+    ?>
 
     <script>
         function toggleMenu() {

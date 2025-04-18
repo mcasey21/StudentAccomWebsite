@@ -25,17 +25,17 @@
             echo "
             <ul class='nav'>
             <li><a class='navlinks' href='home.php'>Home</a></li>
-            <li><a class='navlinks' href='#'>Service</a></li>
+            <li><a class='navlinks' href='service.php'>Rooms</a></li>
             <li><a class='navlinks' href='about.php'>About Us</a></li>              
             <li><a class='navlinks' href='contact.php'>Contact</a></li>
-            <li><a class='navlinks' href='#'>Admin</a></li>
+            <li><a class='navlinks' href='admin.php'>Admin</a></li>
             </ul> ";
         }
         else {
             echo "
             <ul class='nav'>
             <li><a class='navlinks' href='home.php'>Home</a></li>
-            <li><a class='navlinks' href='#'>Service</a></li>
+            <li><a class='navlinks' href='service.php'>Rooms</a></li>
             <li><a class='navlinks' href='about.php'>About Us</a></li>              
             <li><a class='navlinks' href='contact.php'>Contact</a></li>
             </ul> ";
@@ -85,7 +85,7 @@
             <li>• Free laundry tokens</li>
             <li>• €20 café voucher</li>
             </ul>
-            <a href="#" class="offer-btn">Book Now</a>
+            <a href="service.php" class="offer-btn">Book Now</a>
         </div>
     </div>
     
@@ -103,12 +103,7 @@
                 <img class="image" src="coffeecupong.png" alt="Coffee Cup" onclick="window.open('coffeeshop.jpg', '_blank')">
             </div>
         </li>
-        <li>
-            <div class="icon-container">
-                <div class="ring"></div>
-                <img class="image" src="bedpng.png" alt="Bed" onclick="window.open('bedroom.jpg', '_blank')">
-            </div>
-        </li>
+        
         <li>
             <div class="icon-container">
                 <div class="ring"></div>
@@ -124,11 +119,10 @@
     </ul>
     <ul class="textlist">
         <li class="icontext">Coffee</li>
-        <li class="icontext">Bedroom</li>
         <li class="icontext">Washroom</li>
         <li class="icontext">Study room</li>
     </ul>
-    <a href="#"><button class="bookbutton">Book Now</button></a>
+    <a href="service.php"><button class="bookbutton">Book Now</button></a>
     </div>
 
     

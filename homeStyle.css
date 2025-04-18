@@ -222,7 +222,7 @@ body {
 .icons-list {
     position: relative;
     top: -30px;
-    left: 10%;
+    left: 13%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -239,7 +239,7 @@ body {
     height: 35px;
     position: relative;
     top: -50px;
-    left: 19%;
+    left: 18.5%;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -267,7 +267,7 @@ body {
     color: hotpink;
     position: relative;
     top: -70px;
-    left: 10%;
+    left: 13%;
     padding: 21px;
 }
 

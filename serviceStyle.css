@@ -1,0 +1,186 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #fff0f6, #fce4ec);
+}
+
+.unistay-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    position: relative;
+    left: 2%;
+    top: 3%;
+}
+
+.unistay-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 17%;
+    height: 3px;
+    background: hotpink;
+    border-radius: 3px;
+}
+
+.unistay-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #546e7a;
+    margin-top: 2px;
+    letter-spacing: 1px;
+    position: relative;
+    left: 2%;
+    top: 3%;
+}
+
+.nav {
+    position: relative;
+    top: -7%;
+    left: 32%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.navlinks {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: hotpink;
+    font-size: 110%;
+}
+
+.navlinks:hover {
+    color: pink;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .button-line {
+    width: 25px;
+    height: 2.5px;
+    background-color: hotpink;
+    border: 2px solid hotpink;
+    border-radius: 8px;
+    margin-bottom: 3px;
+    transition: 0.3s;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -290px;
+    width: 250px;
+    height: 100%;
+    background-color: pink;
+    color: hotpink;
+    padding: 20px;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sideMenuSection {
+      position: relative;
+      left: 20%;
+      top: -2%;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      color: hotpink;
+      font-weight: 700;
+      font-size: 120%;
+  }
+
+  .sideMenuImg {
+      position: relative;
+      left: 15%;
+      width: 40px;
+      height: 40px;
+  }
+
+  .sideMenuSection:hover {
+      color: lightpink;
+  }
+
+  .side-menu.open
+  {
+    right: 0;
+  }
+
+  hr {
+      background-color: hotpink;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border: none;
+      height: 2px;
+  }
+
+.room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.room-tile {
+    display: flex;
+    background-color: hotpink;
+    color: black;
+    border: 5px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 600px;
+    height: 200px;
+    box-shadow: 5px 5px 0 black;
+}
+
+.room-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 5px solid black;
+}
+
+.room-content {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.room-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.room-description {
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.room-price {
+    font-weight: bold;
+}

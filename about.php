@@ -23,17 +23,17 @@
             echo "
             <ul class='nav'>
             <li><a class='navlinks' href='home.php'>Home</a></li>
-            <li><a class='navlinks' href='#'>Service</a></li>
+            <li><a class='navlinks' href='service.php'>Rooms</a></li>
             <li><a class='navlinks' href='about.php'>About Us</a></li>              
             <li><a class='navlinks' href='contact.php'>Contact</a></li>
-            <li><a class='navlinks' href='#'>Admin</a></li>
+            <li><a class='navlinks' href='admin.php'>Admin</a></li>
             </ul> ";
         }
         else {
             echo "
             <ul class='nav'>
             <li><a class='navlinks' href='home.php'>Home</a></li>
-            <li><a class='navlinks' href='#'>Service</a></li>
+            <li><a class='navlinks' href='service.php'>Rooms</a></li>
             <li><a class='navlinks' href='about.php'>About Us</a></li>              
             <li><a class='navlinks' href='contact.php'>Contact</a></li>
             </ul> ";
