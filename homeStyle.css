@@ -6,6 +6,7 @@ body {
     font-family: Helvetica, sans-serif;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(135deg, #fff0f6, #fce4ec);
 }
 
 .unistay-title{
@@ -46,7 +47,7 @@ body {
 .nav {
     position: relative;
     top: -7%;
-    left: 30%;
+    left: 32%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -76,7 +77,7 @@ body {
     right: 20px;
     cursor: pointer;
     z-index: 1001;
-  }
+}
 
   .button-line {
     width: 25px;
@@ -135,4 +136,246 @@ body {
       margin-top: 20px;
       border: none;
       height: 2px;
+}
+
+.main-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: black;
+    margin-bottom: 0.75rem;
+    position: relative;
+    left: 2%;
+    top: 3%;
+}
+
+.main-text::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 45%;
+    height: 5px;
+    background: hotpink;
+    border-radius: 3px;
+}
+
+.sub-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #546e7a;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    position: relative;
+    left: 5%;
+    top: 3%;
+}
+
+.sub-text::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 3%;
+    width: 30%;
+    height: 5px;
+    background: hotpink;
+    border-radius: 3px;
+}
+
+
+.icon-container {
+    width: 90px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.ring {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 8px solid hotpink;
+    position: absolute;
+    pointer-events: none;
+    transition: border-color 0.3s ease;
+}
+
+.icon-container:hover .ring {
+    border-color: lightpink;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+}
+
+.icons-list {
+    position: relative;
+    top: -30px;
+    left: 10%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-list li {
+    display: inline-block;
+}
+
+.bookbutton {
+    background-color: hotpink;
+    border-radius: 40px;
+    width: 120px;
+    height: 35px;
+    position: relative;
+    top: -50px;
+    left: 19%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.bookbutton:hover {
+    background-color: lightpink;
+}
+
+.textlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.textlist li {
+    display: inline-block;
+}
+
+.icontext {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: hotpink;
+    position: relative;
+    top: -70px;
+    left: 10%;
+    padding: 21px;
+}
+
+.middle {
+    position: relative;
+    left: 25%;
+    top: -5%;
+}
+
+.side-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+.left-box {
+    width: 220px;
+    border: 5px solid hotpink;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+
+.testimonial-text {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    top: -70px;
+}
+
+.testimonial-author {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    position: relative;
+    top: -70px;
+}
+
+.testimonial-line {
+    position: relative;
+    top: -70px;
+}
+
+.quote {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -40px;
+    left: 45px;
+}
+
+.offer-box {
+    width: 220px;
+    border: 5px solid hotpink;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+  }
+
+  .offer-box {
+    text-align: center;
+  }
+  
+  .calendar-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .offer-title {
+    color: hotpink;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .offer-details {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .offer-perks {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .offer-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: hotpink;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .offer-btn:hover {
+    background-color: #e60073;
   }
