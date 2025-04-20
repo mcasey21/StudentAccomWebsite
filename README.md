@@ -62,12 +62,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project is entirely fake and for showcase purposes only. No real purchases, transactions, or user data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storage are performed outside of a local/dev environment.
 
 ### 📸 Screenshots
-![Login page Screenshot](page screenshots/loginPage.png)
-![Home page Screenshot](page screenshots/homePage.png)
-![Rooms page Screenshot](page screenshots/roomsPage.png)
-![Checkout page Screenshot](page screenshots/checkoutPage.png)
-![Room Database page Screenshot](page screenshots/roomDbPage.png)
-![Add room page Screenshot](page screenshots/addRoomPage.png)
+![Login page Screenshot](images/loginPage.png)
+![Home page Screenshot](images/homePage.png)
+![Rooms page Screenshot](images/roomsPage.png)
+![Checkout page Screenshot](images/checkoutPage.png)
+![Room Database page Screenshot](images/roomDbPage.png)
+![Add room page Screenshot](images/addRoomPage.png)
 
 ### 🚀 How to Run Locally Using XAMPP
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clone the repository or download the ZIP
