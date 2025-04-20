@@ -30,7 +30,7 @@
 
     echo <<< _END
         <div class="loginWrapper">
-        <div class="title">Account Details</div>
+        <div class="title">Alter Room</div>
         <form class="loginForm" method="post">
             <fieldset>
                 <legend>Title</legend>

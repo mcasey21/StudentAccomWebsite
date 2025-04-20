@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            background: linear-gradient(135deg, #fff0f6, #fce4ec);
+            padding: 20px;
+        }
+
+        .payment-form {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .payment-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 2px solid hotpink;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 30px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .pay-btn {
+            width: 103%;
+            padding: 8px;
+            background: hotpink;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .pay-btn:hover {
+            background: lightpink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-form">
+    <h2>Enter Card Details</h2>
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="cardholder">Cardholder Name</label>
+            <input type="text" id="cardholder" name="cardholder" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cardnumber">Card Number</label>
+            <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required maxlength="19">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required maxlength="5">
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" placeholder="123" required maxlength="4">
+            </div>
+        </div>
+
+        <button type="submit" class="pay-btn">Pay Now</button>
+    </form>
+</div>
+
+</body>
+</html>
