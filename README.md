@@ -59,8 +59,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Database: MySQL
 
 ### ⚠️ Disclaimer
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project is entirely fake and for showcase purposes only. No real purchases, transactions, or user data storage are performed outside of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a local/dev environment.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project is entirely fake and for showcase purposes only. No real purchases, transactions, or user data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storage are performed outside of a local/dev environment.
 
 ### 📸 Screenshots
 ![Login page Screenshot](page screenshots/loginPage.png)
