@@ -63,12 +63,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a local/dev environment.
 
 ### 📸 Screenshots
-![Homepage Screenshot](page screenshots/loginPage.png)
-![Homepage Screenshot](page screenshots/homePage.png)
-![Homepage Screenshot](page screenshots/roomsPage.png)
-![Homepage Screenshot](page screenshots/checkoutPage.png)
-![Homepage Screenshot](page screenshots/roomDbPage.png)
-![Homepage Screenshot](page screenshots/addRoomPage.png)
+![Login page Screenshot](page screenshots/loginPage.png)
+![Home page Screenshot](page screenshots/homePage.png)
+![Rooms page Screenshot](page screenshots/roomsPage.png)
+![Checkout page Screenshot](page screenshots/checkoutPage.png)
+![Room Database page Screenshot](page screenshots/roomDbPage.png)
+![Add room page Screenshot](page screenshots/addRoomPage.png)
 
 ### 🚀 How to Run Locally Using XAMPP
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clone the repository or download the ZIP
